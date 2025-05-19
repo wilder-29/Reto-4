@@ -1,0 +1,9 @@
+# Determinar si 3 longitudes oueden formar un triangulo
+def es_triangulo(a, b, c):
+    return a + b > c and a + c > b and b + c > a
+
+# Ejemplo:
+a = float(input("Lado a: "))
+b = float(input("Lado b: "))
+c = float(input("Lado c: "))
+print("Se puede formar un triángulo:", es_triangulo(a, b, c))
