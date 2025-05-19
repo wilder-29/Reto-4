@@ -1,0 +1,27 @@
+# Retornar la camital de un pais de America
+def capital_de(pais):
+    match pais:
+        case "argentina":
+            return "Buenos Aires"
+        case "brasil":
+            return "Brasilia"
+        case "colombia":
+            return "Bogotá"
+        case "chile":
+            return "Santiago"
+        case "ecuador":
+            return "Quito"
+        case "mexico":
+            return "Ciudad de México"
+        case "peru":
+            return "Lima"
+        case "uruguay":
+            return "Montevideo"
+        case "venezuela":
+            return "Caracas"
+        case _:
+            return "País no identificado"
+
+# Ejemplo:
+pais = input("Ingrese el nombre de un país de América en minúsculas: ")
+print("Capital:", capital_de(pais))
