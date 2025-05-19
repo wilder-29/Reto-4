@@ -1,0 +1,13 @@
+#Verificar si un punto esta dentro de un circulo
+
+def punto_en_circulo(cx, cy, r, px, py):
+    distancia_cuadrada = (px - cx)**2 + (py - cy)**2
+    return distancia_cuadrada < r**2
+
+# Ejemplo:
+cx = float(input("Centro x: "))
+cy = float(input("Centro y: "))
+r = float(input("Radio: "))
+px = float(input("Punto x: "))
+py = float(input("Punto y: "))
+print("El punto está dentro del círculo:", punto_en_circulo(cx, cy, r, px, py))
